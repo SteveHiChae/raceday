@@ -1,0 +1,101 @@
+2016-01-29T12:09:13.614222+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2016-01-29T12:09:13.677887+00:00 app[web.1]: MONGODB | Unsupported client option 'connect_timeouts'. It will be ignored.
+2016-01-29T12:09:13.792957+00:00 app[web.1]: 
+2016-01-29T12:09:13.700069+00:00 app[web.1]: MONGODB | Adding ds051645-a.mongolab.com:51645 to the cluster.
+2016-01-29T12:09:13.704887+00:00 app[web.1]: MONGODB | Server ds051645.mongolab.com:51645 elected as primary in rs-ds051645.
+2016-01-29T12:09:13.792963+00:00 app[web.1]: 
+2016-01-29T12:09:13.751886+00:00 app[web.1]: MONGODB | ds051645.mongolab.com:51645 | coursera_racers.saslStart | STARTED | {}
+2016-01-29T12:09:13.792960+00:00 app[web.1]: Mongo::Auth::Unauthorized (User hichae is not authorized to access coursera_racers.):
+2016-01-29T12:09:13.792963+00:00 app[web.1]: 
+2016-01-29T12:09:13.792962+00:00 app[web.1]:   app/controllers/racers_controller.rb:8:in `index'
+2016-01-29T12:09:13.792961+00:00 app[web.1]:   app/models/racer.rb:87:in `paginate'
+2016-01-29T12:09:15.070534+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=raceday-hichae.herokuapp.com request_id=8c86466e-5b12-434c-af0a-dc4760c46b53 fwd="115.136.100.41" dyno=web.1 connect=0ms service=7ms status=200 bytes=228
+2016-01-29T12:09:23.713306+00:00 app[web.1]: MONGODB | Server ds051645-a.mongolab.com:51645 elected as primary in rs-ds051645.
+2016-01-29T12:09:23.712910+00:00 app[web.1]: MONGODB | ds051645.mongolab.com:51645 being removed from the cluster.
+2016-01-29T12:42:31.592371+00:00 heroku[web.1]: Idling
+2016-01-29T12:42:31.592963+00:00 heroku[web.1]: State changed from up to down
+2016-01-29T12:42:31.597441+00:00 heroku[web.1]: State changed from down to starting
+2016-01-29T12:42:35.546172+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-01-29T12:42:35.581422+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 15487 -e production`
+2016-01-29T12:42:36.821258+00:00 app[web.1]: [2016-01-29 12:42:36] INFO  WEBrick::HTTPServer#start done.
+2016-01-29T12:42:36.821518+00:00 app[web.1]: Exiting
+2016-01-29T12:42:36.820212+00:00 app[web.1]: [2016-01-29 12:42:36] FATAL SignalException: SIGTERM
+2016-01-29T12:42:36.820217+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
+2016-01-29T12:42:36.820219+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
+2016-01-29T12:42:36.820221+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
+2016-01-29T12:42:36.820220+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:32:in `start'
+2016-01-29T12:42:36.820221+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:34:in `run'
+2016-01-29T12:42:36.820223+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/server.rb:286:in `start'
+2016-01-29T12:42:36.820223+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.5.1/lib/rails/commands/server.rb:80:in `start'
+2016-01-29T12:42:36.820226+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.5.1/lib/rails/commands/commands_tasks.rb:75:in `tap'
+2016-01-29T12:42:36.820225+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.5.1/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+2016-01-29T12:42:36.820227+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.5.1/lib/rails/commands/commands_tasks.rb:75:in `server'
+2016-01-29T12:42:36.820231+00:00 app[web.1]: 	bin/rails:9:in `<main>'
+2016-01-29T12:42:36.820229+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.5.1/lib/rails/commands.rb:17:in `<top (required)>'
+2016-01-29T12:42:36.820228+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.5.1/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+2016-01-29T12:42:36.820230+00:00 app[web.1]: 	bin/rails:9:in `require'
+2016-01-29T12:42:36.820959+00:00 app[web.1]: [2016-01-29 12:42:36] INFO  going to shutdown ...
+2016-01-29T12:42:37.826242+00:00 heroku[web.1]: Process exited with status 143
+2016-01-29T12:42:40.742198+00:00 app[web.1]: [2016-01-29 12:42:40] INFO  WEBrick 1.3.1
+2016-01-29T12:42:40.742226+00:00 app[web.1]: [2016-01-29 12:42:40] INFO  ruby 2.0.0 (2015-12-16) [x86_64-linux]
+2016-01-29T12:42:40.742443+00:00 app[web.1]: [2016-01-29 12:42:40] INFO  WEBrick::HTTPServer#start: pid=3 port=15487
+2016-01-29T12:42:41.213652+00:00 heroku[web.1]: State changed from starting to up
+2016-01-29T13:06:14.917498+00:00 heroku[api]: Deploy 30214c2 by stvchae@gmail.com
+2016-01-29T13:06:14.917498+00:00 heroku[api]: Release v9 created by stvchae@gmail.com
+2016-01-29T13:06:15.086161+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-01-29T13:06:15.086148+00:00 heroku[slug-compiler]: Slug compilation started
+2016-01-29T13:06:15.023929+00:00 heroku[web.1]: State changed from up to starting
+2016-01-29T13:06:17.843121+00:00 heroku[web.1]: Starting process with command `bin/rails server -p 27723 -e production`
+2016-01-29T13:06:20.482311+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-01-29T13:06:22.021058+00:00 app[web.1]: [2016-01-29 13:06:22] FATAL SignalException: SIGTERM
+2016-01-29T13:06:22.021070+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:34:in `run'
+2016-01-29T13:06:22.021068+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
+2016-01-29T13:06:22.021072+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.5.1/lib/rails/commands/server.rb:80:in `start'
+2016-01-29T13:06:22.021069+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:32:in `start'
+2016-01-29T13:06:22.021064+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
+2016-01-29T13:06:22.021071+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.6.4/lib/rack/server.rb:286:in `start'
+2016-01-29T13:06:22.021075+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.5.1/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+2016-01-29T13:06:22.021166+00:00 app[web.1]: => Booting WEBrick
+2016-01-29T13:06:22.021131+00:00 app[web.1]: [2016-01-29 13:06:22] INFO  WEBrick::HTTPServer#start done.
+2016-01-29T13:06:22.021167+00:00 app[web.1]: => Rails 4.2.5.1 application starting in production on http://0.0.0.0:15487
+2016-01-29T13:06:22.021078+00:00 app[web.1]: 	bin/rails:9:in `<main>'
+2016-01-29T13:06:22.021070+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
+2016-01-29T13:06:22.021073+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.5.1/lib/rails/commands/commands_tasks.rb:80:in `block in server'
+2016-01-29T13:06:22.021074+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.5.1/lib/rails/commands/commands_tasks.rb:75:in `tap'
+2016-01-29T13:06:22.021076+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.5.1/lib/rails/commands.rb:17:in `<top (required)>'
+2016-01-29T13:06:22.021077+00:00 app[web.1]: 	bin/rails:9:in `require'
+2016-01-29T13:06:22.021169+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2016-01-29T13:06:22.021169+00:00 app[web.1]: => Ctrl-C to shutdown server
+2016-01-29T13:06:22.021075+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.2.5.1/lib/rails/commands/commands_tasks.rb:75:in `server'
+2016-01-29T13:06:22.021170+00:00 app[web.1]: Exiting
+2016-01-29T13:06:22.021083+00:00 app[web.1]: [2016-01-29 13:06:22] INFO  going to shutdown ...
+2016-01-29T13:06:22.381086+00:00 app[web.1]: [2016-01-29 13:06:22] INFO  WEBrick 1.3.1
+2016-01-29T13:06:22.381329+00:00 app[web.1]: [2016-01-29 13:06:22] INFO  WEBrick::HTTPServer#start: pid=3 port=27723
+2016-01-29T13:06:22.381118+00:00 app[web.1]: [2016-01-29 13:06:22] INFO  ruby 2.0.0 (2015-12-16) [x86_64-linux]
+2016-01-29T13:06:22.670953+00:00 heroku[web.1]: State changed from starting to up
+2016-01-29T13:06:22.991911+00:00 heroku[web.1]: Process exited with status 143
+2016-01-29T13:06:38.115326+00:00 app[web.1]: => Booting WEBrick
+2016-01-29T13:06:38.115331+00:00 app[web.1]: => Rails 4.2.5.1 application starting in production on http://0.0.0.0:27723
+2016-01-29T13:06:38.115333+00:00 app[web.1]: => Run `rails server -h` for more startup options
+2016-01-29T13:06:38.115334+00:00 app[web.1]: Started GET "/" for 115.136.100.41 at 2016-01-29 13:06:38 +0000
+2016-01-29T13:06:38.115333+00:00 app[web.1]: => Ctrl-C to shutdown server
+2016-01-29T13:06:38.152307+00:00 app[web.1]: Processing by RacersController#index as HTML
+2016-01-29T13:06:38.215132+00:00 app[web.1]: MONGODB | Adding ds051645-a.mongolab.com:51645 to the cluster.
+2016-01-29T13:06:38.219744+00:00 app[web.1]: MONGODB | Server ds051645.mongolab.com:51645 elected as primary in rs-ds051645.
+2016-01-29T13:06:38.264703+00:00 app[web.1]: MONGODB | ds051645.mongolab.com:51645 | coursera_racers.saslStart | STARTED | {}
+2016-01-29T13:06:38.345282+00:00 app[web.1]: 
+2016-01-29T13:06:38.345284+00:00 app[web.1]: Mongo::Auth::Unauthorized (User hichae is not authorized to access coursera_racers.):
+2016-01-29T13:06:38.345285+00:00 app[web.1]:   app/models/racer.rb:87:in `paginate'
+2016-01-29T13:06:38.345287+00:00 app[web.1]:   app/controllers/racers_controller.rb:8:in `index'
+2016-01-29T13:06:38.345287+00:00 app[web.1]: 
+2016-01-29T13:06:38.345288+00:00 app[web.1]: 
+2016-01-29T13:06:38.160027+00:00 app[web.1]: MONGODB | Adding ds051645.mongolab.com:51645 to the cluster.
+2016-01-29T13:06:38.219433+00:00 app[web.1]: MONGODB | Server ds051645-a.mongolab.com:51645 discovered as primary in replica set: 'rs-ds051645'. Changing topology to replica set.
+2016-01-29T13:06:38.262742+00:00 app[web.1]: MONGODB | ds051645.mongolab.com:51645 | coursera_racers.find | STARTED | {"find"=>"racers", "filter"=>{}, "projection"=>{"_id"=>true, "number"=>true, "first_name"=>true, "last_name"=>true, "gender"=>true, "group"=>true, "secs"=>true}, "skip"=>0, "limit"=>30, "sort"=>{}}
+2016-01-29T13:06:38.343608+00:00 app[web.1]: MONGODB | ds051645.mongolab.com:51645 | coursera_racers.saslStart | FAILED | Authentication failed. (18) | 0.078762026s
+2016-01-29T13:06:38.343698+00:00 app[web.1]: MONGODB | ds051645.mongolab.com:51645 | coursera_racers.find | FAILED | User hichae is not authorized to access coursera_racers. | 0.080719156s
+2016-01-29T13:06:38.344199+00:00 app[web.1]: Completed 500 Internal Server Error in 192ms (ActiveRecord: 0.0ms)
+2016-01-29T13:06:38.350693+00:00 heroku[router]: at=info method=GET path="/" host=raceday-hichae.herokuapp.com request_id=2a38be95-faf6-447b-855a-7a831316d3fc fwd="115.136.100.41" dyno=web.1 connect=0ms service=237ms status=500 bytes=1754
+2016-01-29T13:06:39.558351+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=raceday-hichae.herokuapp.com request_id=ae739606-4d0a-4c48-bcab-967073401633 fwd="115.136.100.41" dyno=web.1 connect=1ms service=5ms status=200 bytes=228
+2016-01-29T13:06:48.221740+00:00 app[web.1]: MONGODB | Server ds051645-a.mongolab.com:51645 elected as primary in rs-ds051645.
+2016-01-29T13:06:48.221370+00:00 app[web.1]: MONGODB | ds051645.mongolab.com:51645 being removed from the cluster.
